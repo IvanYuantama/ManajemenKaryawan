@@ -50,7 +50,8 @@ export default function Login() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       <form onSubmit={handleSubmit} className="bg-white dark:bg-gray-800 p-6 rounded shadow w-80">
-        <h1 className="text-xl font-semibold mb-4 text-center text-gray-800 dark:text-white">Login Aksamedia</h1>
+        <h1 className="text-xl font-semibold mb-4 text-center text-gray-800 dark:text-white">Login</h1>
+        <p className="text-md mb-4 text-center text-gray-800 dark:text-white">Use this for example (user: admin, pass : pastibisa)</p>
         <input type="text" placeholder="Username" className="w-full px-4 py-2 border mb-3 rounded dark:bg-gray-700 dark:text-white" value={form.username} onChange={(e) => setForm({ ...form, username: e.target.value })} required />
         <input type="password" placeholder="Password" className="w-full px-4 py-2 border mb-4 rounded dark:bg-gray-700 dark:text-white" value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} required />
         <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded">
